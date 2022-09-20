@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 
 """ Module handling requests for State objects """
@@ -32,7 +31,7 @@ def all_states():
             if key not in ignored_keys:
                 setattr(state, key, data[key])
         state.save()
-        return(state.to_dict()), 201
+        return (state.to_dict()), 201
     abort(404)
 
 

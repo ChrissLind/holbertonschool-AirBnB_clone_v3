@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 """Comments"""
 
 from flask import Blueprint

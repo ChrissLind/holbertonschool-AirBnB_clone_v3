@@ -31,7 +31,7 @@ def all_amenity():
             if key not in ignored_keys:
                 setattr(amenity, key, data[key])
         amenity.save()
-        return(amenity.to_dict()), 201
+        return (amenity.to_dict()), 201
     abort(404)
 
 

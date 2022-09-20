@@ -33,7 +33,7 @@ def all_users():
             if key not in ignored_keys:
                 setattr(user, key, data[key])
         user.save()
-        return(user.to_dict()), 201
+        return (user.to_dict()), 201
     abort(404)
 
 
